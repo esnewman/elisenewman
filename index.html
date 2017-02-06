@@ -55,27 +55,6 @@ ul.tab li a:focus, .active {
     height: 1500px; /* Used in this example to enable scrolling */
 }
 	
-/* div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 5px;
-    text-align: center;
-    background-color: white;
-} */
 	
 * {
   box-sizing: border-box;
@@ -104,8 +83,8 @@ div.desc {
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   overflow: auto;
   background-color: black;
 }
@@ -250,13 +229,22 @@ onclick="myFunction(event, 'home')">Home</a></li>
     <img src="IMG_3836.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="IMG_2958.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="IMG_3833.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="IMG_2957.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="IMG_2958.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
     <img src="IMG_2957.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="IMG_2716.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="IMG_2715.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="IMG_2686.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -265,23 +253,38 @@ onclick="myFunction(event, 'home')">Home</a></li>
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
+      <div class="numbertext">1 / 7</div>
       <img src="IMG_3836.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="IMG_2958.jpg" style="width:100%">
+      <div class="numbertext">2 / 7</div>
+      <img src="IMG_3833.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="IMG_2957.jpg" style="width:100%">
+      <div class="numbertext">3 / 7</div>
+      <img src="IMG_2958.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
+      <div class="numbertext">4 / 7</div>
       <img src="IMG_2957.jpg" style="width:100%">
+    </div>
+	  
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="IMG_2716.jpg" style="width:100%">
+    </div>
+	  
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="IMG_2715.jpg" style="width:100%">
+    </div>
+	  
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="IMG_2686.jpg" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -296,79 +299,25 @@ onclick="myFunction(event, 'home')">Home</a></li>
       <img class="demo cursor" src="IMG_3836.jpg" style="width:100%" onclick="currentSlide(1)" alt="Collapsed Vase">
     </div>
     <div class="column">
-      <img class="demo cursor" src="IMG_2958.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      <img class="demo cursor" src="IMG_3833.jpg" style="width:100%" onclick="currentSlide(2)" alt="Collapsed Vase 2">
     </div>
     <div class="column">
-      <img class="demo cursor" src="IMG_2957.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="IMG_2958.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kiddush Goblet">
     </div>
     <div class="column">
-      <img class="demo cursor" src="IMG_2957.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="IMG_2957.jpg" style="width:100%" onclick="currentSlide(4)" alt="Collapsed Mug">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_2716.jpg" style="width:100%" onclick="currentSlide(4)" alt="Drip Bowl">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_2715.jpg" style="width:100%" onclick="currentSlide(4)" alt="Drip Bowl 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_2686.jpg" style="width:100%" onclick="currentSlide(4)" alt="Don Quixote and Sancho Panza Jar Set">
     </div>
   </div>
 </div>
-
-	
-	
-<!--<img id="myImg" src="IMG_3836.jpg" alt="Collapsed Vase" height="200">
-<img id="myImg" src="IMG_3833.jpg" alt="Collapsed Vase 2" height="200">
-<img id="myImg" src="IMG_2958.jpg" alt="Kiddush Goblet" height="200">
-<img id="myImg" src="IMG_2957.jpg" alt="Collapsed Mug" height="200">
-<img id="myImg" src="IMG_2716.jpg" alt="Drip Bowl" height="200">
-<img id="myImg" src="IMG_2715.jpg" alt="Drip Bowl 2" height="200">
-<img id="myImg" src="IMG_2686.jpg" alt="Don Quixote and Sancho Panza Jar Set" height="200">-->
-
-
-
-	
-<!-- <div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_3836.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Collapsed Vase</div>
-</div>	
-	
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_3833.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Collapsed Vase 2</div>
-</div>	
-	
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_2958.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Kiddush Goblet</div>
-</div>	
-	
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_2957.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Collapsed Mug</div>
-</div>	
-	
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_2716.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Drip Bowl</div>
-</div>	
-	
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_2715.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Drip Bowl 2</div>
-</div>
-	
-
-<div class="img">
-  <a target="_blank" href="img_fjords.jpg">
-    <img src="IMG_2686.jpg" width="300" height="200">
-  </a>
-  <div class="desc">Don Quixote and Sancho Panza Jar Set</div>
-</div> -->
 	
   <h2>Food</h2>	
 
