@@ -1,32 +1,127 @@
 <!DOCTYPE html>
 <html>
 	
-<head>
+<head>	
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Elise Newman</title>
+	<title>Elise Newman | Ph.D. Student at MIT Linguistics</title>
 </head> 
-	
-<style>
+<style>	
+
 body {
-    background-image: url("https://s24.postimg.org/h0c4za5w5/harp2.jpg");
+    background-image: url("https://s27.postimg.org/e68zs6l1v/thumb.jpg");
+    background-repeat: repeat-y;
+    background-position: right;
+    margin:0;
+    font-family: verdana;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC7063;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-family: verdana;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #EC7063;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    margin-left: 1cm;
+    height: 1500px; /* Used in this example to enable scrolling */
 }
 </style>
-
-	
-<style>
-	
-
-	
-</style>	
-
 <body>
 
-<img src="headshot.jpg" style="width:70%">	
-<audio controls><source src="bringatorch.mp3" type="audio/mpeg"></audio>
-<a href="https://www.harp.com/product/carol-of-the-bells-coventry-carol-2-harps/">here</a>
-<a href="mailto:karabershad@gmail.com" target="_top">karabershad@gmail.com</a> or 773.991.8611
+<ul class="topnav" id="myTopnav">
+  <li><a class="alignleft">Elise Newman</a></li>
+  <li><a href="javascript:void(0);" class="alignright" onclick="myFunction(event, 'misc')">Miscellaneous</a></li>
+  <li><a href="javascript:void(0);" class="alignright" onclick="myFunction(event, 'news')">Publications</a></li>
+  <li><a href="javascript:void(0);" class="alignright"
+onclick="myFunction(event, 'home')">Home</a></li>
 
-  </body>
+</ul>
+
+<div class="main" id="home">
+  <h1>About</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+
+</div>
+
+<div class="main" id="news">
+  <h1>Publications</h1>
+  <h2>Presentations</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+
+</div>
+
+<div class="main" id="misc">
+  <h1>Pottery</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+
+</div>
+
+
+<footer style="position: fixed; bottom: 0px; top: 51px; width: 1cm; height: 100%; background-color: #FDEDEC;">
+  </footer>
+
+<footer style="position: fixed; bottom: 0px; width: 100%; padding: 5px 5px 5px 5px; background-color: #F5B7B1;">
+    Contact me at <a href="mailto:esnewman@mit.edu" target="_top">esnewman@mit.edu</a>.
+  </footer>
+
+
+<script>
+function myFunction(evt,page) {
+    var i, main, tablinks;
+    main = document.getElementsByClassName("main");
+    for (i = 0; i < main.length; i++) {
+        main[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(page).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+
+
 </html>
